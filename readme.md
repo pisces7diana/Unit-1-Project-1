@@ -15,7 +15,7 @@ There will be 2 players (aka teams) that will take turn choosing an answer - the
 
 Give me a brief description of the API you are using and how you plan on using it. Does it use some sort of authentication like an APIkey. List some of the urls are using below.
 
-- `https://cdn.contentful.com.`: is the API Base URL and it's a read-only API. It returns a json array - in it, it has the items array, it contains the objects of fields that contains 20 questions, 3 answers to choose from, and the correct answer. I will access the data from Contentful API and pull it into my html file to create a trivia game website via fetch url.
+- `https://cdn.contentful.com.`: is the API Base URL and it's a read-only API. It returns a json array - in it, it has the items array, it contains the objects of fields that contains 20 questions, 3 answers to choose from, and the correct answer. I will access the data from Contentful API and pull it into my html file to create a trivia game website via AJAX.
 
 Sample Ajax called:
 ``````js
