@@ -2,7 +2,7 @@
 
 ### Diana Hudson
 
-DEPLOYED SITE: [Click Here](https://sealproject1.vercel.app/)
+DEPLOYED SITE: [Click Here](https://pisces7diana.github.io/Unit-1-Project-1/)
 
 ## Description on Project
 
@@ -917,11 +917,11 @@ Here put a mix of text explanation plus a picture giving us an idea of the layou
 
 #### Desktop View
 
-![My Desktop View](https://i.imgur.com/5Bs7N6B.png)
+![My Desktop View](https://i.imgur.com/0kmsIxP.png)
 
 #### Mobile View
 
-![My Mobile View](https://i.imgur.com/5Bs7N6B.png)
+![My Mobile View](https://i.imgur.com/8CuLoWl.jpg)
 
 ## Schedule of Work
 
