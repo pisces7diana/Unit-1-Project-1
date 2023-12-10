@@ -1,4 +1,4 @@
-# My first GA Project
+# My first GA Project - Welcome to the Random Trivia Game because I can be random at times.
 
 ### Diana Hudson
 
@@ -8,26 +8,28 @@ DEPLOYED SITE: [Click Here](https://sealproject1.vercel.app/)
 
 A paragraph discussing the idea of your project, the API you are using and desired user experience.
 
-> I am creating a trivia game of 20 randomy questions, considered of my work Everlance, my favorite t.v. show, coding, and miscellaneous ones.
+> I am creating a trivia game of 20 random questions, consisting of my company Everlance, favorite t.v. show, coding, and miscellaneous. I am using Contentful to create the content type and obtaining the data from its API: https://cdn.contentful.com.
+There will be 2 players (aka teams) that will take turn choosing an answer - the correct answer gets a point.
 
 ## Details about the API
 
 Give me a brief description of the API you are using and how you plan on using it. Does it use some sort of authentication like an APIkey. List some of the urls are using below.
 
-- `https://www.perfumeapi.com/ingredients`: This returns a json array with all the different ingedients
+- `https://cdn.contentful.com.`: is the API Base URL and it's a read-only API. It returns a json array - in it, it has the items array, it contains the objects of fields that contains 20 questions, 3 answers to choose from, and the correct answer. I will access the data from Contentful API and pull it into my html file to create a trivia game website via fetch url.
 
-Sample Fetch/Ajax called:
-```js
+Sample Ajax called:
+``````js
 const URL = "https://cdn.contentful.com/spaces/svw4d0i6i87i/environments/master/entries?access_token=nm9EiV_n2XckXPXr4VDqdfctvj7dvSPuEkK2Er5D9QA&&content_type=triviaq"
 $.ajax(URL)
 .then((data) => {
+    questions = data.items.map((q) => q.fields)
     console.log(data)
 })
-```
+``````
 
-The Data I get back:
+The data I get back:
 ```json
-// 20231209002753
+// 20231209170506
 // https://cdn.contentful.com/spaces/svw4d0i6i87i/environments/master/entries?access_token=nm9EiV_n2XckXPXr4VDqdfctvj7dvSPuEkK2Er5D9QA&&content_type=triviaq
 
 {
@@ -905,6 +907,13 @@ The Data I get back:
 ## Mockup
 
 Here put a mix of text explanation plus a picture giving us an idea of the layout of your website.
+
+1. Header - "My GA Trivia Game"
+2. Questions box where the player (aka team) will see one question is asked at a time
+3. A box with 3 answers A, B, C to choose from
+4. Team Board scores to see how many points the team has received, each time they choose the correct answer, the score increases
+
+![Imgur](https://i.imgur.com/ZxIptuu.png)
 
 #### Desktop View
 
